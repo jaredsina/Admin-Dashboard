@@ -24,11 +24,14 @@
     grid-area:2/2/3/3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-row: 1fr 1fr;
 }
 .content-wrapper.projects{
     grid-area: 1/1/3/2;
 }
 .content-wrapper.Trending{
     grid-area: 2/2/3/3;
+}
+.icon{
+    height:20px;
+    width:30px;
 }
