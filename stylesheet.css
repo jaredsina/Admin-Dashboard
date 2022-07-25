@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu&display=swap');
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 .wrapper{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: minmax(250px, 300px) 3fr;
 }
 .sidebar{
     background-color:#18181b;
     color: #e2e8f0;
     grid-area: 1/1/3/2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: 200px repeat(10, 50px);
     justify-items:center;
     align-items: center;
+}
+.side-content{
+    justify-self: start;
 }
 .header{
     grid-area:1/2/2/3;
@@ -43,5 +50,26 @@ body {
 .icon{
     height:20px;
     width:30px;
-    
+}
+.icon.dashboard{
+    height:50px;
+    width:50px;
+}
+.icon.settings{
+    grid-area:9/1/10/2;
+}
+.side-content.settings{
+    grid-area: 9/2/10/3;
+}
+.icon.support{
+    grid-area: 10/1/11/2;
+}
+.side-content.support{
+    grid-area:10/2/11/3;
+}
+.icon.privacy{
+    grid-area: 11/1/12/2;
+}
+.side-content.privacy{
+    grid-area:11/2/12/3;
 }
