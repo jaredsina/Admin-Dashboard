@@ -1,3 +1,8 @@
+
+/********************
+* Full Site Section *
+*********************/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu&display=swap');
 *{
     font-family: 'Roboto', sans-serif;
@@ -11,6 +16,11 @@ body {
     display: grid;
     grid-template-columns: minmax(250px, 300px) 3fr;
 }
+
+/************************
+ * Side Content Section *
+ ************************/
+
 .sidebar{
     background-color:	#1e2124;
     color: #ffffff;
@@ -23,37 +33,6 @@ body {
 }
 .side-content{
     justify-self: start;
-}
-.header{
-    padding:15px 30px;
-    grid-area:1/2/2/3;
-    display: grid;
-    background-color: #282b30;
-    color:#ffffff;
-}
-.header-top, .header-bottom{
-    display: flex;
-    align-items: center;
-    gap:20px;   
-}
-.welcome{
-    flex:1;
-}
-.main-content{
-    grid-area:2/2/3/3;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    background-color: #36393e;
-    padding:15px 30px;
-    color:#e2e8f0;
-}
-.content-wrapper.projects{
-    grid-area: 1/1/3/2;
-    display: grid;
-    grid-template-rows: 50px 3fr;
-}
-.content-wrapper.Trending{
-    grid-area: 2/2/3/3;
 }
 .icon{
     height:20px;
@@ -81,6 +60,26 @@ body {
 .side-content.privacy{
     grid-area:11/2/12/3;
 }
+
+/******************
+ * Header Section *
+ ******************/
+
+.header{
+    padding:15px 30px;
+    grid-area:1/2/2/3;
+    display: grid;
+    background-color: #282b30;
+    color:#ffffff;
+}
+.header-top, .header-bottom{
+    display: flex;
+    align-items: center;
+    gap:20px;   
+}
+.welcome{
+    flex:1;
+}
 .img{
     height:40px;
     width:40px;
@@ -91,7 +90,7 @@ body {
     width:75px;
     border-radius: 50px;
 }
-.search-bar{
+ .search-bar{
     background-color: #8b8e8f;
     border-radius: 8px;
     border-width: 0px;
@@ -121,6 +120,24 @@ button{
 }
 .name.big{
     margin:0px;
+}
+
+/*************************
+ * Your Projects Section *
+ *************************/
+
+.main-content{
+    grid-area:2/2/3/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #36393e;
+    padding:15px 30px;
+    color:#e2e8f0;
+}
+.content-wrapper.projects{
+    grid-area: 1/1/3/2;
+    display: grid;
+    grid-template-rows: 50px 3fr;
 }
 .card{
     border-radius:8px;
@@ -156,4 +173,17 @@ button{
 }
 .content-header{
     padding:20px;
+}
+
+/************************
+ * Announcement Section *
+ ************************/
+
+.content-wrapper.announcements{
+    background-color: red;
+}
+
+
+.content-wrapper.Trending{
+    grid-area: 2/2/3/3;
 }
