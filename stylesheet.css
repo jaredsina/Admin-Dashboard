@@ -180,9 +180,9 @@ button{
  * Announcement Section *
  ************************/
 
-.content-wrapper-announcements{
+.content-wrapper.announcements{
     display: grid;
-    grid-template-rows:50px 3fr;
+    grid-template-rows:50px max-content;
 }
 .announcement-card{
     background-color: #424549;
@@ -198,6 +198,33 @@ button{
 .announcement-content{
     font-size: 11px;;
 }
-.content-wrapper.Trending{
+
+/*******************
+* Trending Section *
+********************/
+
+.content-wrapper.trending{
     grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-rows:50px max-content;
+}
+.trending-card{
+    background-color: #424549;
+    border-radius: 8px;
+    padding:25px;
+    box-shadow: 0 4px 8px 0 #1e2124;
+    display: grid;
+    grid-template-columns: 50px 100fr;
+    gap:15px;
+}
+.user-info{
+    align-self: center;
+}
+.trending-username{
+    font-size: 13px;
+    margin:0px;
+}
+.trending-user-title{
+    margin:0px;
+    font-size: 11px;
 }
