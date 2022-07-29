@@ -71,6 +71,7 @@ body {
     display: grid;
     background-color: #282b30;
     color:#ffffff;
+    box-shadow: 0 10px 0 0 #1e2124;
 }
 .header-top, .header-bottom{
     display: flex;
@@ -131,8 +132,8 @@ button{
     display: grid;
     grid-template-columns: 3fr 1fr;
     background-color: #36393e;
-    padding:15px 30px;
     color:#e2e8f0;
+    padding:20px;
 }
 .content-wrapper.projects{
     grid-area: 1/1/3/2;
@@ -154,7 +155,7 @@ button{
     gap:30px;   
     grid-template-columns:repeat(auto-fit, minmax(300px,.5fr));
     grid-auto-rows:max-content;
-    padding:20px;
+    padding-right:20px;
 }
 .card-header{
     margin:0px;
@@ -172,18 +173,31 @@ button{
     gap:10px;
 }
 .content-header{
-    padding:20px;
+    padding:0px;
 }
 
 /************************
  * Announcement Section *
  ************************/
 
-.content-wrapper.announcements{
-    background-color: red;
+.content-wrapper-announcements{
+    display: grid;
+    grid-template-rows:50px 3fr;
 }
-
-
+.announcement-card{
+    background-color: #424549;
+    border-radius: 8px;
+    padding:25px;
+    box-shadow: 0 4px 8px 0 #1e2124;
+}
+.announcement-header{
+    margin:0px;
+    font-size:13px;
+    padding-top:5px;    
+}
+.announcement-content{
+    font-size: 11px;;
+}
 .content-wrapper.Trending{
     grid-area: 2/2/3/3;
 }
