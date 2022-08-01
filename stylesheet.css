@@ -131,6 +131,7 @@ button{
     grid-area:2/2/3/3;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: #36393e;
     color:#e2e8f0;
     padding:20px;
